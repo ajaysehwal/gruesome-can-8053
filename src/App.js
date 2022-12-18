@@ -14,7 +14,7 @@ import Faqs from "./components/faqs";
 import Terms from "./components/Terms";
 import Ewaste from "./components/Ewaste";
 import Policy from "./components/Policy";
-
+import Signup from "./components/signup";
 class App extends React.Component {
   render() {
     return (
@@ -22,7 +22,7 @@ class App extends React.Component {
         <div className="App">
           <Navbar />
           <Switch>
-          <Route path="/">
+          <Route path="/jiomart-ui-clone-react">
               <Homepage />
             </Route>
             <Route path="/content/:category/:sub_category">
@@ -33,6 +33,9 @@ class App extends React.Component {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/signup">
+              <Signup />
             </Route>
             <Route path="/Aboutus">
               <Aboutus />
